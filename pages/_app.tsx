@@ -8,7 +8,11 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       <NextSeo
         title="One Punch Network"
         description="A bridge network to transfer tokens between Ethereum and Shardeum."
+        additionalMetaTags={[
+          { name: 'viewport', content: 'initial-scale=1, width=device-width' },
+        ]}
       />
+
       <CssBaseline />
       <Component {...pageProps} />
     </>
