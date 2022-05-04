@@ -10,11 +10,16 @@ export default function Home() {
         minHeight="100vh"
         py={8}
       >
-        <Box width={500}>
+        <Box maxWidth={500} width="100%">
           <Logo />
         </Box>
 
-        <Typography variant="h6" mt={2} color="textSecondary">
+        <Typography
+          variant="h6"
+          mt={2}
+          color="textSecondary"
+          textAlign="center"
+        >
           A bridge network to transfer tokens between Ethereum and Shardeum
         </Typography>
       </Stack>
