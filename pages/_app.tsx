@@ -1,6 +1,7 @@
-import { CssBaseline } from '@mui/material';
+import { CssBaseline, ThemeProvider } from '@mui/material';
 import { NextSeo } from 'next-seo';
 import type { AppProps } from 'next/app';
+import theme from 'theme';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -13,8 +14,10 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         ]}
       />
 
-      <CssBaseline />
-      <Component {...pageProps} />
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   );
 }
