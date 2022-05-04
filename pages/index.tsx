@@ -1,5 +1,5 @@
 import { Box, Container, Stack, Typography } from '@mui/material';
-import { orange, red } from '@mui/material/colors';
+import { orange } from '@mui/material/colors';
 import Logo from 'components/Logo';
 
 export default function Home() {
